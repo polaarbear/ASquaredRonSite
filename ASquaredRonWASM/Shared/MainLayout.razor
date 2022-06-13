@@ -1,0 +1,15 @@
+﻿@inherits LayoutComponentBase
+
+<PageTitle>A&sup2;Ron</PageTitle>
+
+<MudThemeProvider Theme="ThemeManager.PrimaryTheme" IsDarkMode="DarkMode" />
+<MudDialogProvider />
+<MudSnackbarProvider />
+<MudLayout>
+    <BackgroundBack />
+    <BackgroundFront />
+    <HeaderBar ToggleDarkMode="ToggleDarkMode" />
+    <MudMainContent>
+        @Body
+    </MudMainContent>
+</MudLayout>

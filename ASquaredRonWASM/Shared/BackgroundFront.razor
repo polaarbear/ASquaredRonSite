@@ -1,0 +1,32 @@
+﻿<div id="backgroundFront">
+    @foreach (var cell in _frontCells)
+    {
+        if (cell.animated)
+        {
+            switch (_frontVariant)
+            {
+                case 0:
+                    <div class="cellA" style="animation: animatemid ease 6s;"></div>
+                    break;
+                case 1:
+                    <div class="cellB" style="animation: animatemid ease 6s;"></div>
+                    break;
+                case 2:
+                    <div class="cellC" style="animation: animatemid ease 6s;"></div>
+                    break;
+                case 3:
+                    <div class="cellD" style="animation: animatemid ease 6s;"></div>
+                    break;
+            }
+            _frontVariant++;
+            if(_frontVariant == 4)
+            {
+                _frontVariant = 0;
+            }
+        }
+        else
+        {
+            <div class="cell"></div>
+        }
+    }
+</div>
