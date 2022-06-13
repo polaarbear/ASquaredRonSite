@@ -1,0 +1,70 @@
+﻿@page "/Expertise"
+
+<PageTitle>A&#178;Ron</PageTitle>
+
+<MudContainer MaxWidth="MaxWidth.ExtraLarge" Style="height: calc(100vh - 64px - 3rem);" Class="my-4 d-flex flex-column align-center justify-center">
+    <MudGrid Class="mud-height-full">
+        <MudItem xs="12" lg="6">
+            <MudPaper Elevation="20" Class="d-flex flex-column align-center justify-center pa-8 mud-height-full">
+                <MudText Typo="Typo.h5">Behind This Site</MudText>
+                <MudCarousel ShowArrows="true" ShowBullets="true" AutoCycle="false" TData="object" Style="height: 480px; width: 100%;">
+                    <MudCarouselItem Transition="Transition.Slide" Color="Color.Surface" Class="pa-8 d-flex flex-column justify-center align-center" Style="border-radius: .25rem;">
+                        <MudImage Elevation="20" Src="img/PC.jpg" Class="ma-4" Style="width: 50%; border-radius: .5rem;" />
+                        <MudText Typo="Typo.body1" Align="Align.Center" Class="pa-2">
+                            The front-end of this site uses Blazor WebAssembly.  I self-host it on a water-cooled AMD Threadripper server in my home.
+                            It is currently running the latest Ubuntu 22.04 Long-Term Support release.
+                        </MudText>
+                    </MudCarouselItem>
+                    <MudCarouselItem Transition="Transition.Slide" Color="Color.Surface" Class="pa-8 d-flex flex-column justify-center align-center" Style="border-radius: .25rem;">
+                        <MudText Typo="Typo.body1" Align="Align.Center" Class="pa-2">
+                            Back-end data for this site is stored using a MariaDB database.  Filling out the contact form results in an entry
+                            being placed in the database so I can retrieve it and reach out to you.
+                        </MudText>
+                    </MudCarouselItem>
+                    <MudCarouselItem Transition="Transition.Slide" Color="Color.Surface" Class="pa-8 d-flex flex-column justify-center align-center" Style="border-radius: .25rem;">
+                        <MudText Typo="Typo.body1" Align="Align.Center" Class="pa-2">
+                            This page uses
+                            <MudLink Href="https://mudblazor.com">
+                                <MudText Typo="Typo.body1" Class="d-inline-block" Style="color: white; text-decoration: underline;">MudBlazor</MudText>
+                            </MudLink> controls.
+                        </MudText>
+                        <MudText Typo="Typo.body1" Align="Align.Center" Class="pa-2">
+                            The animated background is my own custom design using pure C#, Blazor, and CSS grids, no JavaScript is required.
+                        </MudText>
+                    </MudCarouselItem>
+                </MudCarousel>
+            </MudPaper>
+        </MudItem>
+        <MudItem xs="12" lg="6">            
+            <MudPaper Elevation="20" Class="d-flex flex-column align-center justify-center pa-8 mud-height-full">
+                <MudText Typo="Typo.h5">How I Got Here</MudText>
+                <MudCarousel ShowArrows="true" AutoCycle="false" TData="object" Style="height: 480px; width: 100%;">
+                    <MudCarouselItem Transition="Transition.Slide" Color="Color.Surface" Class="pa-8 d-flex flex-column justify-center align-center" Style="border-radius: .25rem;">
+                        <MudText Typo="Typo.body1" Align="Align.Center" Class="pa-2">
+                            I started my career in IT before I ever graduated high-school, working as the
+                            virus-cleanup guy for friends and family.  After graduation I jumped straight into the industry
+                            working a summer job to help my local school district catch up on the construction of a new building.
+                        </MudText>
+                    </MudCarouselItem>
+                    <MudCarouselItem Transition="Transition.Slide" Color="Color.Surface" Class="pa-8 d-flex flex-column justify-center align-center" Style="border-radius: .25rem;">
+                        <MudText Typo="Typo.body1" Align="Align.Center" Class="pa-2">
+                            Over the next decade I held numerous jobs in the industry.  I've worked at a tiny
+                            mom-and-pop shop.  I did phone support for a company selling bleeding-edge overclocked systems designed
+                            for day-trading.  I even worked a 5 year stint in the retail market as an Advanced Repair Agent
+                            for my local Geek Squad.
+                        </MudText>
+                    </MudCarouselItem>
+                    <MudCarouselItem Transition="Transition.Slide" Color="Color.Surface" Class="pa-8 d-flex flex-column justify-center align-center" Style="border-radius: .25rem;">
+                        <MudText Typo="Typo.body1" Align="Align.Center" Class="pa-2">
+                            I always knew that my true love was writing code.  I dabbled for years, and before I graduated college
+                            I obtained a full-time position as a .NET web developer.  I finished out my degree while working full-time
+                            and am now at my 3rd year in that role.  I've taken over primary UI development duties and am currently
+                            re-building our ageing ASP.NET application as a Blazor Server app.  Our product is generally deployed
+                            in intranet scenarios which will allow that platform to shine while avoiding the loading hit of WASM.
+                        </MudText>
+                    </MudCarouselItem>
+                </MudCarousel>
+            </MudPaper>
+        </MudItem>
+    </MudGrid>
+</MudContainer>

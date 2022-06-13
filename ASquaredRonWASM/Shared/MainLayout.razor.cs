@@ -2,11 +2,12 @@
 {
     public partial class MainLayout
     {
-        public bool DarkMode { get; private set; } = true;
+        private NavDrawer? _NavDrawer { get; set; }
+        private bool DarkMode { get; set; } = true;
 
-        protected override void OnInitialized()
+        public void ToggleNavDrawer()
         {
-            StateHasChanged();
+            _NavDrawer!.ToggleNav();
         }
 
         public void ToggleDarkMode()

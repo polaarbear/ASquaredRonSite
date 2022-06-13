@@ -1,0 +1,21 @@
+﻿<MudDrawer Elevation="20" Variant="DrawerVariant.Responsive" @bind-Open="_IsOpen" Style="background-color: var(--mud-palette-surface);">
+    <MudDrawerHeader>
+        <MudText Typo="Typo.h5" Color="Color.Primary" Class="pa-3">Navigate</MudText>
+    </MudDrawerHeader>
+    <MudDrawerContainer>
+        <MudNavMenu Rounded="true" Bordered="true" Color="Color.Tertiary">
+            <MudNavLink Class="pa-1" Href="/" Match="NavLinkMatch.All">
+                <MudText Typo="Typo.body2" Style="color: var(--mud-palette-text-primary);">Professional Experience</MudText>
+            </MudNavLink>
+            <MudNavLink Class="pa-1" Href="/Expertise">
+                <MudText Typo="Typo.body2" Style="color: var(--mud-palette-text-primary);">Tech Expertise</MudText>
+            </MudNavLink>
+            <MudNavLink Class="pa-1" Href="/Background">
+                <MudText Typo="Typo.body2" Style="color: var(--mud-palette-text-primary);">View Background</MudText>
+            </MudNavLink>
+            <MudNavLink Class="pa-1" Href="/About">
+                <MudText Typo="Typo.body2" Style="color: var(--mud-palette-text-primary);">About Me</MudText>
+            </MudNavLink>
+        </MudNavMenu>
+    </MudDrawerContainer>
+</MudDrawer>

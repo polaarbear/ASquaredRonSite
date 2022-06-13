@@ -7,8 +7,9 @@
 <MudSnackbarProvider />
 <MudLayout>
     <BackgroundBack />
-    <BackgroundFront />
-    <HeaderBar ToggleDarkMode="ToggleDarkMode" />
+    <BackgroundFront />    
+    <HeaderBar ToggleNavDrawer="ToggleNavDrawer" ToggleDarkMode="ToggleDarkMode" />
+    <NavDrawer @ref="_NavDrawer" />
     <MudMainContent>
         @Body
     </MudMainContent>
