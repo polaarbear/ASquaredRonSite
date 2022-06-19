@@ -1,0 +1,51 @@
+﻿@page "/ContactMe"
+
+<MudContainer MaxWidth="MaxWidth.Medium" Class="my-16">
+    <EditForm Model="@_ContactMeModel" OnValidSubmit="SubmitContactInfo">
+        <DataAnnotationsValidator />        
+        <MudPaper Elevation="20" Class="pa-16">
+            <MudGrid>
+                <MudItem xs="12">
+                    <MudText Typo="Typo.h5" Align="Align.Center" Class="pa-1 mb-0">
+                        Contact Me
+                    </MudText>
+                    <MudText Typo="Typo.caption" Color=Color.Error Align="Align.Center" Class="pa-0">
+                        @if(_Error) {
+                            <div>An unknown server error has occured.<br />Management has been notified.<br />Please try again later!</div>
+                        }
+                        else {
+                            <ValidationSummary />
+                        }
+                    </MudText>
+                </MudItem>
+                <MudItem xs="3" lg="2" Class="d-flex flex-row align-center justify-end">
+                    <MudText Typo="Typo.body1" Class="pa-2">
+                        Name:
+                    </MudText>
+                </MudItem>
+                <MudItem xs="9" lg="10">
+                    <MudTextField @bind-Value="@_ContactMeModel.FullName"></MudTextField>
+                </MudItem>
+                <MudItem xs="3" lg="2" Class="d-flex flex-row align-center justify-end">
+                    <MudText Typo="Typo.body1" Class="pa-2">
+                        Email:
+                    </MudText>
+                </MudItem>
+                <MudItem xs="9" lg="10">
+                    <MudTextField @bind-Value="@_ContactMeModel.Email"></MudTextField>
+                </MudItem>
+                <MudItem xs="3" lg="2" Class="d-flex flex-row align-center justify-end">
+                    <MudText Typo="Typo.body1" Class="pa-2" >
+                        Message:
+                    </MudText>
+                </MudItem>
+                <MudItem xs="9" lg="10">
+                    <MudTextField @bind-Value="@_ContactMeModel.Message" Lines="3"></MudTextField>
+                </MudItem>
+                <MudItem xs="12" Style="text-align: right;">
+                    <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary">Submit</MudButton>
+                </MudItem>
+            </MudGrid>
+        </MudPaper>
+    </EditForm>
+</MudContainer>

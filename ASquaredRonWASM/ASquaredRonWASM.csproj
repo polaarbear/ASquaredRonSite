@@ -13,4 +13,8 @@
 		<PackageReference Include="MudBlazor" Version="6.0.10" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\ASquaredRonModels\ASquaredRonModels.csproj" />
+	</ItemGroup>
+
 </Project>

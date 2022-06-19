@@ -1,165 +1,41 @@
 ﻿@page "/"
-@page "/Experience"
 
-<PageTitle>A&#178;Ron</PageTitle>
-
-<MudContainer MaxWidth="MaxWidth.Large" Class="my-4 d-flex flex-column justify-center align-center">
+<MudContainer MaxWidth="MaxWidth.Medium" Class="my-16">
     <MudGrid>
         <MudItem xs="12">
-            <MudPaper Elevation="20" Class="mt-6 pa-6 d-flex flex-column justify-center align-center">
+            <MudPaper Elevation="20" Class="pa-3">
                 <MudText Typo="Typo.h4" Align="Align.Center" Class="pa-2">
                     Aaron J. Smith
                 </MudText>
                 <MudText Typo="Typo.subtitle1" Align="Align.Center" Class="pa-1">
                     Full-Stack .NET Developer
                 </MudText>
-                <MudText Typo="Typo.h6" Align="Align.Center" Class="pa-4">
-                    I have a bachelor's degree in computer science and a decade of experience in the IT
-                    industry.
+                <MudText Typo="Typo.h6" Align="Align.Left" Class="pa-4">
+                    I hold a bachelor's degree in computer science from Capella University,
+                    and have over a decade of total experience working in the IT industry.
                 </MudText>
-                <MudText Typo="Typo.h6" Align="Align.Center" Class="pa-4">
-                    I'm currently employed designing custom web applications to handle
-                    contract management and legal documentation for high-profile
+                <MudText Typo="Typo.h6" Align="Align.Left" Class="pa-4">
+                    Currently I am employed designing custom web applications to
+                    handle contract management and/or legal documentation for
                     clients that include 3-letter TV networks and international banks.
                 </MudText>
             </MudPaper>
         </MudItem>
         <MudItem xs="12">
-            <MudPaper Elevation="20">
-                <MudText Typo="Typo.h5" Class="pa-4" Color="Color.Primary">Deadline Management</MudText>
-                <MudExpansionPanels Elevation="20">
-                    <MudExpansionPanel>
-                        <TitleContent>
-                            <span class="d-flex flex-row justify-start align-center">
-                                <MudIcon Icon="@Icons.Material.Filled.Schedule" Class="mr-1" />
-                                <MudText Typo="Typo.subtitle1">Stayin' On Schedule</MudText>
-                            </span>
-                        </TitleContent>
-                        <ChildContent>
-                            <MudText Typo="Typo.body1">
-                                I built an application for the sports department of a major television
-                                network.  It enables them to schedule payments and negotiations with all
-                                of the crew and staff that are required to put sporting events on TV.
-                            </MudText>
-                        </ChildContent>
-                    </MudExpansionPanel>
-                    <MudExpansionPanel>
-                        <TitleContent>
-                            <span class="d-flex flex-row justify-start align-center">
-                                <MudIcon Icon="@Icons.Material.Filled.HealthAndSafety" Class="mr-1" />
-                                <MudText Typo="Typo.subtitle1">Always Approved</MudText>
-                            </span>
-                        </TitleContent>
-                        <ChildContent>
-                            <MudText Typo="Typo.body1">
-                                I built an application for a mid-sized healthcare
-                                company that enables them to track signatures and the chain of trust
-                                on their supply orders as they move from bidding process to completion.
-                            </MudText>
-                        </ChildContent>
-                    </MudExpansionPanel>
-                </MudExpansionPanels>
+            <MudPaper Elevation="20" Class="pa-3">
+                <MudText Typo="Typo.h6" Class="ma-3" Style="color: var(--mud-palette-text-primary);" Align="Align.Center">
+                    Thanks for visiting!
+                </MudText>
+                <MudText Typo="Typo.h6" Class="ma-3" Style="color: var(--mud-palette-text-primary);" Align="Align.Center">
+                    Use the navigation button for more information.
+                </MudText>
             </MudPaper>
         </MudItem>
         <MudItem xs="12">
-            <MudPaper Elevation="20">
-                <MudText Typo="Typo.h5" Class="pa-4" Color="Color.Primary">Security Matters</MudText>
-                <MudExpansionPanels Elevation="20">
-                    <MudExpansionPanel>
-                        <TitleContent>
-                            <span class="d-flex flex-row justify-start align-center">
-                                <MudIcon Icon="@Icons.Material.Filled.Security" Class="mr-1" />
-                                <MudText Typo="Typo.subtitle1">Lock A Doc</MudText>
-                            </span>
-                        </TitleContent>
-                        <ChildContent>
-                            <MudText Typo="Typo.body1">
-                                I integrated with the API of an existing document management system to
-                                enable an international bank to flag documents for possible redaction.
-                                It locked down the security status on offending documents and assigned
-                                them to an individual who was qualified to perform the necessary redactions.
-                            </MudText>
-                        </ChildContent>
-                    </MudExpansionPanel>
-                    <MudExpansionPanel>
-                        <TitleContent>
-                            <span class="d-flex flex-row justify-start align-center">
-                                <MudIcon Icon="@Icons.Material.Filled.Search" Class="mr-1" />
-                                <MudText Class="d-inline-block" Typo="Typo.subtitle1">Secret Search</MudText>
-                            </span>
-                        </TitleContent>
-                        <ChildContent>
-                            <MudText Typo="Typo.body1">
-                                I built a search function for my company's base-application that intelligently
-                                provides users with fields based on their licensing status in the system.
-                                Some tiers of users can search on every field, others can't see the
-                                search at all, while most have some limited in-between functionality.
-                            </MudText>
-                        </ChildContent>
-                    </MudExpansionPanel>
-                </MudExpansionPanels>
-            </MudPaper>
-        </MudItem>
-        <MudItem xs="12">
-            <MudPaper Elevation="20">
-                <MudText Typo="Typo.h5" Class="pa-4" Color="Color.Primary">Smarter Forms</MudText>
-                <MudExpansionPanels Elevation="20">
-                    <MudExpansionPanel>
-                        <TitleContent>
-                            <span class="d-flex flex-row justify-start align-center">
-                                <MudIcon Icon="@Icons.Material.Filled.Dashboard" Class="mr-1" />
-                                <MudText Typo="Typo.subtitle1">Dashing Dashboards</MudText>
-                            </span>
-                        </TitleContent>
-                        <ChildContent>
-                            <MudText Typo="Typo.body1">
-                                I created a dashboard application for a multinational law firm that
-                                assists them in preserving evidence for the legally required length of time
-                                after a trial.  Once the required period has ended, the dashboard
-                                guides the user through a process of notifying the affected parties,
-                                providing an opportunity to send copies to those parties,
-                                and finally marking the documents for destruction.
-                            </MudText>
-                        </ChildContent>
-                    </MudExpansionPanel>
-                    <MudExpansionPanel>
-                        <TitleContent>
-                            <span class="d-flex flex-row justify-start align-center">
-                                <MudIcon Icon="@Icons.Material.Filled.Web" Class="mr-1" />
-                                <MudText Class="d-inline-block" Typo="Typo.subtitle1">Web of Complexity</MudText>
-                            </span>
-                        </TitleContent>
-                        <ChildContent>
-                            <MudText Typo="Typo.body1">
-                                I created a smart-form for a multi-national investment and advisory firm to enable
-                                them to collect tax information from their clients.  It has hundreds of possible states that
-                                change based on the answers being provided.  Due to the length and complexity of the form,
-                                the precise state has to be saved and retrieved to enable it to be filled out across multiple sessions.
-                            </MudText>
-                        </ChildContent>
-                    </MudExpansionPanel>
-                    <MudExpansionPanel>
-                        <TitleContent>
-                            <span class="d-flex flex-row justify-start align-center">
-                                <MudIcon Icon="@Icons.Material.Filled.DynamicForm" Class="mr-1" />
-                                <MudText Class="d-inline-block" Typo="Typo.subtitle1">Data Is Dynamic</MudText>
-                            </span>
-                        </TitleContent>
-                        <ChildContent>
-                            <MudText Typo="Typo.body1">
-                                I built an application for a small agricultural company that converts data from their
-                                obsolete accounting software to a format that can be imported into their modern software.
-                                It also contained a dashboard to review the data for accuracy.
-                            </MudText>
-                        </ChildContent>
-                    </MudExpansionPanel>
-                </MudExpansionPanels>
-            </MudPaper>
-        </MudItem>
-        <MudItem xs="12">
-            <MudPaper Elevation="20" Class="pa-4 my-2 d-flex flex-row justify-center align-center">
-                <MudIcon Icon="@Icons.Material.Filled.Code" />
-                    <MudLink Typo="Typo.h5" Href="https://github.com/polaarbear/">GitHub</MudLink>
+            <MudPaper Elevation="20" Class="pa-3">
+                <MudText Typo="Typo.body2" Class="ma-3" Style="color: var(--mud-palette-text-primary);" Align="Align.Center">
+                    The page background is semi-randomly animated using HTML and CSS with Blazor WASM background threads, no JavaScript required!
+                </MudText>
             </MudPaper>
         </MudItem>
     </MudGrid>
