@@ -1,5 +1,6 @@
 using ASquaredRonDB.Access;
 using ASquaredRonDB.Contexts;
+using Microsoft.AspNetCore.HttpOverrides;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,8 +24,12 @@ builder.Services.AddCors(policy =>
 builder.Services.AddSingleton<IDbAccess, DbAccess>();
 builder.Services.AddScoped<IDbAccessContext, DbAccessContext>();
 
-builder.WebHost.UseUrls("https://*:5011");
 var app = builder.Build();
+
+app.UseForwardedHeaders(new ForwardedHeadersOptions
+{
+    ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto
+});
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -32,8 +37,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+else
+{
+    app.UseHttpsRedirection();
+}
 
-app.UseHttpsRedirection();
+
 app.UseCors("CorsPolicy");
 app.UseAuthorization();
 

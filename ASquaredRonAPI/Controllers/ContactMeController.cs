@@ -14,7 +14,7 @@ namespace ASquaredRonAPI.Controllers
         public ContactMeController(IDbAccessContext dbc)
         {
             _dbc = dbc;
-        }
+        }    
 
         [HttpPost]
         public async Task<ActionResult<int>> PostContactInfo(ContactMeModel contactInfo)
@@ -34,7 +34,8 @@ namespace ASquaredRonAPI.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, "Server error, try again later.");
+                string message = ex.Message;                
+                return StatusCode(500, ex.ToString());
             }
         }
     }

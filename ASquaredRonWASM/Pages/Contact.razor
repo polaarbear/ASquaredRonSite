@@ -9,7 +9,7 @@
                     <MudText Typo="Typo.h5" Align="Align.Center" Class="pa-1 mb-0">
                         Contact Me
                     </MudText>
-                    <MudText Typo="Typo.caption" Color=Color.Error Align="Align.Center" Class="pa-0">
+                    <MudText Typo="Typo.body1" Color="Color.Error" Align="Align.Center" Class="pa-0">
                         @if(_Error) {
                             <div>An unknown server error has occured.<br />Management has been notified.<br />Please try again later!</div>
                         }
@@ -17,6 +17,12 @@
                             <ValidationSummary />
                         }
                     </MudText>
+                    @if(_Success)
+                    {
+                        <MudText Typo="Typo.body1" Color="Color.Success" Align="Align.Center" Class="pa-0">
+                                    <div>Submission Received!</div>
+                        </MudText>
+                    }
                 </MudItem>
                 <MudItem xs="3" lg="2" Class="d-flex flex-row align-center justify-end">
                     <MudText Typo="Typo.body1" Class="pa-2">
