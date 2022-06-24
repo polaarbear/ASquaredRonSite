@@ -17,8 +17,10 @@
                     </MudCarouselItem>
                     <MudCarouselItem Transition="Transition.Slide" Color="Color.Surface" Class="pa-8 d-flex flex-column justify-center align-center" Style="border-radius: .25rem;">
                         <MudText Typo="Typo.body1" Align="Align.Center" Class="pa-2">
-                            Back-end data for this site is stored using a MariaDB database.  Filling out the contact form results in an entry
-                            being placed in the database so I can retrieve it and reach out to you.
+                            Back-end data for this site is stored using a MariaDB database.  Upon filling out the
+                            Contact Me form, the WASM application communicates back to a .NET 6 API Gateway running
+                            on the same server as the front-end UI.  The gateway can then complete the request by putting
+                            your message into my database for retrieval.
                         </MudText>
                     </MudCarouselItem>
                     <MudCarouselItem Transition="Transition.Slide" Color="Color.Surface" Class="pa-8 d-flex flex-column justify-center align-center" Style="border-radius: .25rem;">
@@ -35,32 +37,43 @@
                 </MudCarousel>
             </MudPaper>
         </MudItem>
-        <MudItem xs="12" lg="6">            
+        <MudItem xs="12" lg="6">
             <MudPaper Elevation="20" Class="d-flex flex-column align-center justify-center pa-8 mud-height-full">
                 <MudText Typo="Typo.h5">How I Got Here</MudText>
                 <MudCarousel ShowArrows="true" AutoCycle="false" TData="object" Style="height: 480px; width: 100%;">
                     <MudCarouselItem Transition="Transition.Slide" Color="Color.Surface" Class="pa-8 d-flex flex-column justify-center align-center" Style="border-radius: .25rem;">
                         <MudText Typo="Typo.body1" Align="Align.Center" Class="pa-2">
-                            I started my career in IT before I ever graduated high-school, working as the
-                            virus-cleanup guy for friends and family.  After graduation I jumped straight into the industry
-                            working a summer job to help my local school district catch up on the construction of a new building.
+                            I started my IT "career" at a young age.  My parents bought a 66Mhz Intel i486 with 8MB of RAM
+                            sometime around 1993 and I was instantly hooked.  It was pretty out-dated by the time I hit
+                            middle school, but we managed to acquire multiple hand-me-down systems, and by 7th or 8th grade
+                            I had learned to swap hard drives into the newer systems to recover my old games.
                         </MudText>
                     </MudCarouselItem>
                     <MudCarouselItem Transition="Transition.Slide" Color="Color.Surface" Class="pa-8 d-flex flex-column justify-center align-center" Style="border-radius: .25rem;">
                         <MudText Typo="Typo.body1" Align="Align.Center" Class="pa-2">
-                            Over the next decade I held numerous jobs in the industry.  I've worked at a tiny
-                            mom-and-pop shop.  I did phone support for a company selling bleeding-edge overclocked systems designed
-                            for day-trading.  I even worked a 5 year stint in the retail market as an Advanced Repair Agent
-                            for my local Geek Squad.
+                            Throughout high-school I built and upgraded dozens of budget gaming PC's for myself
+                            and friends as often as our summer and weekend jobs allowed.
+                        </MudText>
+                        <MudText Typo="Typo.body1" Align="Align.Center" Class="pa-2">
+                            The more formal part of my IT career began directly out of high school when I accepted a job
+                            at the IT Department for my local school district.
+                        </MudText>       
+                        <MudText Typo="Typo.body1" Align="Align.Center" Class="pa-2">
+                            From there I did stints at a mom-and pop shop, a university, and as a phone-support technician for
+                            a company building factory-overclocked systems for day-traders.  My final role in IT support came in
+                            the form of a long stretch with some well-known orange geeks at a large blue-hued electronics retailer.
                         </MudText>
                     </MudCarouselItem>
-                    <MudCarouselItem Transition="Transition.Slide" Color="Color.Surface" Class="pa-8 d-flex flex-column justify-center align-center" Style="border-radius: .25rem;">
+                    <MudCarouselItem Transition="Transition.Slide" Color="Color.Surface" Class="pa-8 d-flex flex-column justify-center align-center" Style="border-radius: .25rem;">                        
                         <MudText Typo="Typo.body1" Align="Align.Center" Class="pa-2">
-                            I always knew that my true love was writing code.  I dabbled for years, and before I graduated college
-                            I obtained a full-time position as a .NET web developer.  I finished out my degree while working full-time
-                            and am now at my 3rd year in that role.  I've taken over primary UI development duties and am currently
-                            re-building our ageing ASP.NET application as a Blazor Server app.  Our product is generally deployed
-                            in intranet scenarios which will allow that platform to shine while avoiding the loading hit of WASM.
+                            I always knew that my true love was writing code.  I had been a hobbyist coder for the better part
+                            of a decade, but always struggled to keep my work organized as my projects grew large.  I decided
+                            that I wanted to get serious and went to college for computer science.
+                        </MudText>
+                        <MudText Typo="Typo.body1" Align="Align.Center" Class="pa-2">
+                            Two years into my education, before even graduating, I obtained a role as a web developer.
+                            I continued soldiering through the classes even though I was working full-time and finished out
+                            my bachelor's degree in Spring 2022, by then several years into my role as a professional dev.
                         </MudText>
                     </MudCarouselItem>
                 </MudCarousel>
